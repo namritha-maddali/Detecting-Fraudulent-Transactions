@@ -1,0 +1,107 @@
+.account-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 5% auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5%;
+  color: #094204;
+}
+
+
+.your-info {
+  margin-left: 6.5%;
+  margin-top: -2%;
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.your-info strong {
+  margin-right: 10px;
+  font-size: 1em;
+  color: #094204;
+}
+
+.your-info span {
+  margin-right: 7%;
+  color: #0d4509;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  color: #114e0d;
+  overflow: hidden;
+  border: 2px solid #2d6d2a;
+  table-layout: fixed; 
+}
+
+.transactions-table th, .transactions-table td {
+  padding: 12px;
+  text-align: center;
+  background-color: #effff0;
+}
+
+.transactions-table th {
+  background-color: #d8f4d9;
+  font-weight: 500;
+}
+
+.transactions-table td {
+  background-color: #effff0;
+}
+
+.transactions-table td input[type="text"],
+.transactions-table td input[type="number"],
+.transactions-table td select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2d6d2a;
+  border-radius: 5px;
+  background-color: #effff0;
+  font-size: 1em;
+}
+
+.transactions-table td input[type="text"]:focus,
+.transactions-table td input[type="number"]:focus,
+.transactions-table td select:focus {
+  outline: none;
+  border-color: #165e13;
+  box-shadow: 0px 0px 8px rgba(22, 94, 19, 0.5);
+}
+
+.new-transaction {
+  padding: 10px 30px;
+  font-size: 1.05em;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #165e13;
+  color: #e3fce5;
+  border: solid #165e13 1.5px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  display: block;
+  transition: transform 0.5s, background-color 0.3s;
+}
+
+.new-transaction:hover {
+  transform: scale(1.05);
+  background-color: #104a0f;
+}
+
+.delete-btn {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.to-pred {
+  margin-left: 80%;
+}

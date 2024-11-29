@@ -1,0 +1,124 @@
+.total {
+    margin: 5%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3.5%;
+    font-size: 3em;
+    color: #0d4509;
+}
+
+.auth-container,
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.auth-container button,
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    border: solid #165e13 1.5px;
+    background-color: #165e13;
+    color: #e3fce5;
+    border-radius: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.5s, background-color 0.3s;
+}
+
+.auth-container button:hover,
+button:hover {
+    transform: scale(1.05);
+    background-color: #114e0d;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2d6d2a;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #effff0;
+    margin-bottom: 2%;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #165e13;
+    box-shadow: 0px 0px 8px rgba(22, 94, 19, 0.5);
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    background-color: #effff0;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="black" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #114e0d;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.user-info {
+    margin-top: 30px;
+    padding: 20px;
+    width: 70%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #165e13;
+}
+
+.user-info pre {
+    font-size: 1em;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

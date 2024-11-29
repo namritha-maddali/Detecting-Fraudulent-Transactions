@@ -1,0 +1,76 @@
+.prediction-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 5% auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  overflow-x: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #094204;
+}
+
+.prediction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1em;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.prediction-table thead tr {
+  background-color: #165e13;
+  color: #e3fce5;
+}
+
+.prediction-table th,
+.prediction-table td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+.prediction-table th {
+  font-weight: 400;
+}
+
+.prediction-table tbody tr:nth-child(even) {
+  background-color: #f3f9f4;
+}
+
+.prediction-table tbody tr:hover {
+  background-color: #eaf7e9;
+}
+
+
+.confirm-btn {
+  padding: 8px 12px;
+  font-size: 0.9em;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.confirm-btn.unconfirmed {
+  background-color: #165e13;
+}
+
+.confirm-btn.confirmed {
+  background-color: #f44336;
+}
+
+.confirm-btn:hover {
+  transform: scale(1);
+  opacity: 0.9;
+}
