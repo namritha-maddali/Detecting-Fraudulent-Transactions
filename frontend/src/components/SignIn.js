@@ -40,14 +40,14 @@ const SignIn = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:8000/user/login', loginData);
-      alert('Login data posted successfully!');
+      alert('User Logged in Successfully!');
       localStorage.setItem("userEmail", loginData.Email);
 
       navigate('/my-account');
 
     } catch (error) {
       console.error('Login failed:', error);
-      alert('Failed to post login data. Please try again.');
+      alert('Failed to login. Please try again.');
     }
   };
 
@@ -55,11 +55,11 @@ const SignIn = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:8000/user/signup', formData);
-      alert('new user added successfully! you can log in now.');
+      alert('New User Added Auccessfully! You Can Log In Now.');
       window.location.reload();
     } catch (error) {
       console.error('Signup failed:', error);
-      alert('Failed to post signup data. Please try again.');
+      alert('Failed to add new user. Please try again.');
     }
   };
 

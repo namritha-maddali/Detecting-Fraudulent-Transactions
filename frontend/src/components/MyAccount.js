@@ -17,7 +17,7 @@ const MyAccount = () => {
     const fetchUserInfo = async () => {
       try {
         const email = localStorage.getItem("userEmail");
-        console.log("Fetched email from localStorage:", email);
+        // console.log("Fetched email from localStorage:", email);
         if (!email) throw new Error("User email not found. Please log in again.");
         
         const response = await axios.get(`http://localhost:8000/user/details`, {
@@ -48,12 +48,12 @@ const MyAccount = () => {
     try {
       const response = await axios.put(
         `http://localhost:8000/user/update/${userInfo.User_ID}`, updatedUserInfo);
-      setUserInfo(updatedUserInfo); // Update local state
-      alert("User information updated successfully!");
-      setIsEditing(false); // Exit editing mode
+      setUserInfo(updatedUserInfo);
+      alert("User Information Updated Successfully!");
+      setIsEditing(false);
     } catch (error) {
       console.error("Error saving user data:", error);
-      alert("Failed to update user data. Please try again.");
+      alert("Failed to update user information. Please try again.");
     }
   };
   
