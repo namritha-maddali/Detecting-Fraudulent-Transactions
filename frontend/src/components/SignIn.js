@@ -55,7 +55,7 @@ const SignIn = () => {
     e.preventDefault();
     try {
       await axios.post('http://localhost:8000/user/signup', formData);
-      alert('New User Added Auccessfully! You Can Log In Now.');
+      alert('New User Added Successfully! You Can Log In Now.');
       window.location.reload();
     } catch (error) {
       console.error('Signup failed:', error);
